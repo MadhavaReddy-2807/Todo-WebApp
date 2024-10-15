@@ -28,5 +28,9 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "--This is a basic Todo app used for managing our day-today tasks.You can add task that you want to do in future.\r  After the Task is complete you can Delete the Tasks",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
