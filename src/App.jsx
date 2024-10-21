@@ -10,6 +10,7 @@ function App() {
   const [Showfinished, setShowfinished] = useState(false)
   const handleadd = () => {
     setTodos([...todos, {todo,id:uuidv4(),isCompleted:false}])
+     console.log(todos);
     setTodo("")
   }
   const handleedit = (e,id) => {
@@ -48,9 +49,8 @@ function App() {
   }
  useEffect(()=>{
   // console.log("saving")
-   if(todos.length>0)
-   {
-  localStorage.setItem("todos",JSON.stringify(todos));}
+ 
+  localStorage.setItem("todos",JSON.stringify(todos));
  },[todos])
    useEffect(()=>{
      let newtodos=JSON.parse(localStorage.getItem("todos"));
